@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API to MCP Converter — Turn any API into an MCP Server</title>
+  <meta name="description" content="Convert any REST API into an MCP server in seconds. Upload your OpenAPI spec and get a hosted MCP endpoint for your AI agents.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0a0a0f;
+      --surface: #14141f;
+      --surface2: #1a1a2e;
+      --border: #1e1e2e;
+      --accent: #6366f1;
+      --accent2: #8b5cf6;
+      --accent3: #06b6d4;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --green: #10b981;
+      --red: #ef4444;
+    }
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .hero { text-align: center; padding: 80px 20px; background: linear-gradient(180deg, #1a1a2e 0%, var(--bg) 100%); }
+    .hero .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.3); color: var(--accent); font-size: 0.8rem; margin-bottom: 20px; }
+    .hero h1 { font-size: 3rem; font-weight: 800; margin-bottom: 16px; background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { font-size: 1.25rem; color: var(--muted); max-width: 600px; margin: 0 auto 32px; }
+    .cta { display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, var(--accent), var(--accent2)); border-radius: 8px; color: white; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: opacity 0.2s; }
+    .cta:hover { opacity: 0.9; }
+    .features { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
+    .features h2 { text-align: center; font-size: 2rem; margin-bottom: 40px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+    .feature { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 28px; }
+    .feature h3 { font-size: 1.1rem; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+    .feature h3 .icon { width: 28px; height: 28px; background: linear-gradient(135deg, var(--accent), var(--accent2)); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+    .feature p { color: var(--muted); line-height: 1.6; }
+    .how { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 60px 20px; }
+    .how h2 { text-align: center; font-size: 2rem; margin-bottom: 40px; }
+    .steps { max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+    .step { display: flex; gap: 16px; align-items: flex-start; }
+    .step-num { width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent2)); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
+    .step-text h4 { font-size: 1rem; margin-bottom: 4px; }
+    .step-text p { color: var(--muted); font-size: 0.9rem; }
+    .pricing { max-width: 600px; margin: 0 auto; padding: 60px 20px; text-align: center; }
+    .pricing h2 { font-size: 2rem; margin-bottom: 20px; }
+    .price-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 40px; display: inline-block; }
+    .price { font-size: 3rem; font-weight: 800; color: var(--text); }
+    .price span { font-size: 1rem; color: var(--muted); font-weight: 400; }
+    .features-list { text-align: left; margin: 24px 0; }
+    .features-list li { padding: 8px 0; color: var(--muted); }
+    .features-list li::before { content: "✓ "; color: var(--green); margin-right: 8px; }
+    .footer { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="badge">MCP Server Hosting</div>
+    <h1>API to MCP Converter</h1>
+    <p>Turn any REST API into an MCP server in 30 seconds. Upload your OpenAPI spec and get a hosted endpoint for your AI agents.</p>
+    <a href="https://buy.polar.sh/polar_cl_placeholder" class="cta">Get Started — $14/mo</a>
+  </section>
+
+  <section class="features">
+    <h2>Why Convert Your API to MCP?</h2>
+    <div class="grid">
+      <div class="feature">
+        <h3><span class="icon">⚡</span> AI-Native Access</h3>
+        <p>MCP is the protocol AI agents use to interact with tools. Convert your API once and any MCP-compatible agent can use it instantly.</p>
+      </div>
+      <div class="feature">
+        <h3><span class="icon">🔗</span> No Code Changes</h3>
+        <p>Keep your existing API exactly as it is. We wrap it in an MCP-compatible layer without requiring any modifications to your backend.</p>
+      </div>
+      <div class="feature">
+        <h3><span class="icon">🔒</span> Secure by Default</h3>
+        <p>All MCP endpoints are authenticated and isolated. Your API credentials are encrypted and never shared with third parties.</p>
+      </div>
+      <div class="feature">
+        <h3><span class="icon">🌍</span> Global Edge Network</h3>
+        <p>Your MCP endpoint is hosted on our global edge network for low-latency access from anywhere in the world.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">
+          <h4>Upload Your OpenAPI Spec</h4>
+          <p>Paste your OpenAPI/Swagger JSON or YAML. We support OpenAPI 3.0 and 3.1.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">
+          <h4>We Generate the MCP Wrapper</h4>
+          <p>Our system creates an MCP-compatible server that maps your API endpoints to MCP tools.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">
+          <h4>Get Your MCP Endpoint</h4>
+          <p>Receive a unique MCP server URL with authentication. Connect any MCP client in seconds.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-text">
+          <h4>Use with Any AI Agent</h4>
+          <p>Connect to Claude, Codex, Cursor, Cline, or any MCP-compatible AI tool with one click.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <h2>Simple Pricing</h2>
+    <div class="price-card">
+      <div class="price">$14 <span>/month</span></div>
+      <ul class="features-list">
+        <li>Unlimited MCP conversions</li>
+        <li>Up to 1M API calls/month</li>
+        <li>Custom subdomain for your MCP server</li>
+        <li>OpenAPI 3.0 and 3.1 support</li>
+        <li>Basic analytics dashboard</li>
+        <li>Email support</li>
+      </ul>
+      <a href="https://buy.polar.sh/polar_cl_placeholder" class="cta">Start Free Trial</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>API to MCP Converter — Built for AI agents that need API access</p>
+  </footer>
+</body>
+</html>

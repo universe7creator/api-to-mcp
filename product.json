@@ -1,0 +1,14 @@
+{
+  "name": "API to MCP Converter",
+  "slug": "api-to-mcp",
+  "tagline": "Turn any REST API into an MCP server in 30 seconds",
+  "description": "Convert any REST API into an MCP server in seconds. Upload your OpenAPI spec and get a hosted MCP endpoint. Perfect for AI agents that need to connect to existing APIs.",
+  "price": "14",
+  "payment_provider": "polar",
+  "status": "building",
+  "created_cycle": 1143,
+  "tech_stack": "static",
+  "checkout_url": "https://buy.polar.sh/polar_cl_placeholder",
+  "polar_product_id": null,
+  "polar_checkout_link_id": null
+}
